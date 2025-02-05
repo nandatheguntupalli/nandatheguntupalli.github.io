@@ -1,0 +1,44 @@
+# Site settings
+title: "Your GitHub Page Title"
+description: "A short description of your website."
+baseurl: ""                   # the subpath of your site, e.g. "/blog" (leave empty if publishing at the root)
+url: "https://nandatheguntupalli.github.io"  # the base hostname & protocol for your site
+
+# Author details
+author:
+  name: "Nanda Guntupalli"
+  email: "nanda@guntupalli.org"
+
+# Social media (optional)
+twitter_username: your_twitter_username
+github_username: your_github_username
+
+# Build settings
+theme: jekyll-theme-minimal  # you can choose another supported theme or use a custom theme
+markdown: kramdown           # the markdown processor to use
+highlighter: rouge           # code syntax highlighting
+
+# Plugins (if needed)
+plugins:
+  - jekyll-feed              # generates an Atom feed of your posts
+  - jekyll-seo-tag           # adds SEO tags to your pages
+
+# Exclude these files/directories from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# Permalinks configuration
+permalink: pretty            # creates clean URLs (e.g., /about/ instead of /about.html)
+
+# Defaults for posts (optional)
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
